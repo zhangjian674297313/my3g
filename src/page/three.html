@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="T_charge" ng-repeat="i in Month">
+	<p class="pp">
+		<span>{{i.type}}</span>
+		<span>{{i.yuan}}</span>
+	</p>
+	<ol class="T_oli">
+		<li><span>{{i.ji}}</span><small>{{i.zu}}</small></li>
+		<li><span>{{i.lai}}</span><small>{{i.xian}}</small></li>
+
+	</ol>
+</div>
+<div class="T_charge clear" ng-repeat='i in list'>
+	 <p class="pp">
+		<span>{{i.type}}</span>
+		<span>{{i.yuan}}</span>
+	</p> 
+</div>
+	<p class="te">特别提醒:如果您欠费后90天内未充值，您的号码将作销号处理</p>
+<div class="T_footer">
+	<p>注:本页数据仅供参考,更多详情请登录民生通讯官方</p>
+	<p>网站 www.ms170.cn 进行查询</p>
+	<p>民生通讯官方客服:400-6509170</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+#xinxi{
+  html,body{
+    width:100%;
+    height:100%;
+    position: relative;
+    background: #fff;
+  }
+  .wrapper{
+    width:100%;
+    height:100%;
+  }
+  .container{
+    position: absolute;
+    top:45px;
+    bottom:0;
+    width:100%;
+    overflow-y: auto;
+  }
+  @borderColor:#5e83e1;
+  .xinxi_watchid_box{
+    width:100%;
+    .xinxi_iccid{
+      position: relative;
+      width:90%;
+      height:40px;
+      margin-left: 5%;
+      line-height: 40px;
+      border:1px solid #ccc;
+      margin-top:10px;
+      -webkit-border-radius:;
+      -moz-border-radius:;
+      border-radius:5px;
+      input{
+        padding-left:10px;
+        border:none;
+        background: transparent;
+        outline: none;
+      }
+      .xinxi_tell_active{
+        padding-left:10px;
+        color: #aaa;
+      }
+    }
+    .xinxi_more{
+      line-height: normal;
+      text-align: center;
+      line-height: 20px;
+      position: absolute;
+      right:10px;
+      top:10px;
+      width:20px;
+      height:20px;
+      background: #ed9c28;
+      border-radius: 50%;
+      color: #fff;
+    }
+    p.xinxi_hui{
+      background: #eee;
+      border:1px solid #fff;
+    }
+    p.xinxi_hui.active{
+      border-color: @borderColor;
+      color: @borderColor;
+      .xinxi_right_jiao{
+        border-color: @borderColor;
+      }
+      .xinxi_tell_active{
+        color: @borderColor;
+      }
+    }
+    .xinxi_right_jiao{
+      position: absolute;
+      right:10px;
+      top:15px;
+      width:10px;
+      height:10px;
+      border-top:4px solid #ccc;
+      border-right:4px solid #ccc;
+      border-color: #aaa;
+      -webkit-transform:rotate(45deg);
+    }
+    .xinxi_yucun{
+      width:90%;
+      height:40px;
+      margin-left: 5%;
+      line-height: 40px;
+      span{
+        float: right;
+        line-height: 30px;
+        min-width:50px;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;;
+        height:30px;
+        margin-top:5px;
+        background: @borderColor;
+      }
+    }
+  }
+  .xinxi_more_box{
+    position: absolute;
+    left:4%;
+    right:4%;
+    bottom:10px;
+    top:60px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 20px 5px #ccc;
+    &:after{
+      position: absolute;
+      right:4%;
+      top:-8px;
+      content: "";
+      width:20px;
+      height:20px;
+      background: #fff;
+     // -webkit-transform:skewX(45deg);
+      -webkit-transform: rotate(67.5deg) skewX(45deg) translate3d(5px,2px,0);
+      box-shadow: -10px -10px 20px -2px #ccc;
+    }
+    padding:22px 10px 10px 10px;
+    p{
+      line-height: 2;
+    }
+    p.color{
+      color: #ff8012;
+    }
+    div{
+      width:100%;
+      img{
+        width:84%;
+        margin-left:8%;
+      }
+    }
+  }
+  .xinxi_more_box.none{
+    display: none;
+  }
+  .xinxi_tcxz{
+    font-family:"微软雅黑";
+    font-size:12px;
+    width:90%;
+    margin-left:5%;
+    h2{
+      line-height:26px;
+    }
+  }
+  .xinxi_next_btn{
+    display: block;
+    width:90%;
+    margin-left:5%;
+    line-height:40px;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    font-size:18px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 50px;
+    margin-top:10px;
+    &.active{
+      background: @borderColor;
+    }
+  }
+  .xinxi_type{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left:.4rem;
+    margin-top:.4rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border:1px solid #eee;
+    padding-bottom:.4rem;
+    p{
+      margin-top:.4rem;
+    }
+  }
+  .xinxi_type.active{
+    border-color: @borderColor;
+    color: @borderColor;
+  }
+  .plug_box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-bottom:10px;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    z-index:9;
+    background: #ffffff;
+    display: none;
+    span{
+      margin-top:10px;
+      width:40%;
+      height:2rem;
+      line-height: 2rem;
+      text-align: center;
+      border:1px solid #ccc;
+      display: inline-block;
+      margin-left:5%;
+      border-radius: 6px;
+    }
+    span.active{
+      border-color: @borderColor;
+      color: @borderColor;
+    }
+  }  
+
+  
+}

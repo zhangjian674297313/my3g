@@ -1,0 +1,138 @@
+.login-page{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	margin-top:10px;
+	padding:25px 50px;
+	background:#fff;
+	z-index:98;
+	text-align:center;
+	&>div{
+		width:100%;
+		
+		p{
+			width:100%;
+			line-height:45px;
+			overflow:hidden;
+			&.flex{
+				display:-webkit-box;
+				input{
+					-webkit-box-flex:1;
+				}
+				a{
+					color:@blue;
+					padding:5px 10px;
+					box-sizing:border-box;
+					border-radius:10px;
+				}
+				a.disabled{
+					background:rgba(238,238,238,1);
+					color:rgba(156,156,156,1);
+					text-decoration:none;
+				}
+				a.gray{
+					color:@gray;
+				}
+			}
+			&.picNum{
+			overflow:hidden;
+				a{
+					display:block;
+					padding:0;
+					margin:0;
+					line-height:1;
+					-webkit-transform: scale(0.9);
+					img{
+						display:block;
+						width:90px;
+						margin:3px 0;
+						height:30px;
+					}
+				}
+			}
+			span{
+				color:@blue;
+				margin:0 auto;
+				display:block;
+				line-height:1;
+				&:before{
+					content:"?";
+					color:#fff;
+					background:@blue;
+					border-radius:50%;
+					text-align:center;
+					padding:0 3px;
+					margin-right:5px;
+				}
+			}
+			input{
+				width:100%;
+				display:block;
+				border:none;
+				border-bottom:1px solid #eee;
+				outline:none;
+				line-height:45px;
+			}
+
+		}
+		button{
+			display:block;
+			width:100%;
+			margin-bottom:18px;
+			background:@blue;
+			color:#fff;
+			outline:none;
+			line-height:40px;
+			border:none;
+			border-radius:20px;
+			font-size:14px;
+			&:first-of-type{
+				margin-top:30px;
+			}
+			&.disabled{
+				background:#ccc;
+			}
+		}
+		&.info{
+			text-align:left;
+			p,h3{
+				line-height:28px;
+				color:rgba(159,159,159,1)
+			}
+			h3{
+				font-size:16px;
+			}
+			p{
+				padding-left:23px;
+				font-size:14px;
+			}
+			.sub-title{
+				padding-left:5px;
+				&:before{
+					content:"　";
+					background:rgba(238,238,238,1);
+					width:5px;
+					border-radius:2px;
+					height:5px;
+					margin-right:5px;
+				}
+			}
+			
+		}
+	}
+}
+.otherPath{
+	position:absolute;
+	left:0;
+	bottom:25px;
+	color:#9c9c9c;
+	font-size:14px;
+}
+#dia{
+	line-height:20px;
+	position:absolute;
+	left:0;
+	bottom:48px;
+	color:#ccc;
+	display:none;
+}

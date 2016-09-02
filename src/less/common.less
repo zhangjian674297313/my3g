@@ -1,0 +1,48 @@
+
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.wrapper{
+	width:100%;
+	position:relative;
+	height:100%;
+}
+body{
+	background:#eee;
+}
+.mhead{
+	background:#000;
+	color:#fff;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	position:relative;
+	font-size:18px;
+	z-index:99;
+	&:before{
+		content:"—";
+		position:absolute;
+		left:18px;
+		width:8px;
+		top:1px;
+		overflow:hidden;
+		-webkit-transform:scale(2);
+	}
+	span{
+		position:absolute;
+		left:15px;
+		width:10px;
+		height:10px;
+		display:block;
+		top:16px;
+		border-top:2px solid #fff;
+		border-left:2px solid #fff;
+		-webkit-transform:rotate(-45deg);
+	}
+	
+}
+
+@blue:#5e83e1;
+@gray:#9c9c9c;

@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<div class="container" id="massages">
+		<div class="mhead">
+			<span class="right-arrow back"></span>
+			<h4>填写信息</h4>
+		</div>
+		<div class='content1'>
+			
+			<h3>预存<money>30</money>元/<rental>0元月租</rental>/<phonenumber>17091213473</phonenumber><span>√</span></h3>
+			<p>身份信息</p>
+			<input type='text' placeholder='姓名'>
+			<input type='text' placeholder='身份证号' id='cardnum'>
+			<input type='text' placeholder='身份证地址'>
+			<input type='text' placeholder='联系电话' id='phone'>
+			<h4 class="sphoto">上传照片<span class="arrow">></span></h4>
+			<h5 class='read'><em></em>我已阅读<span>《入网协议》</span></h5>
+			<input type="submit" class='sub'>
+			
+		</div>
+		
+		<div class="plugin plugin-hide">
+			<div class="mhead">
+				<span class="right-arrow"></span>
+				<h4>上传证件照片</h4>
+			</div>
+			<div class="content2">
+				
+				<div class='card photo1'>
+					<p>手持身份证照片</p>
+					<div id='filephoto'>
+	                    <img id="ImgPr" style="display: inherit;" />
+	               	</div>
+	                <input type="file" id="up" />
+	                
+	                
+				</div>
+				<div class='card photo2'>
+					<p>身份证正面与手表包装ICCID号</p>
+					<div  id='filephoto1'>
+	                    <img id="ImgPr1" style="display: inherit;" />
+	               	</div>
+	                <input type="file" id="up1" />
+				</div>
+				<div class='card photo3'>
+					<p>身份证正面与手表包装ICCID号</p>
+					<div id='filephoto2'>
+	                    <img id="ImgPr2" style="display: inherit;" />
+	               	</div>
+	                <input type="file" id="up2" />
+				</div>
+				<button class='complete disabled'>完成</button>
+				<h4>上传须知</h4>
+				<h3>1.手持身份证照片需要五官可见，证件全部信息无遮挡，完全露出双手手臂；</h3>
+				<h3>2.请上传实名制照片，若您的实名制审核不通过，将无法开户；</h3>
+				<h3>3.如审核不通过，民生通讯的客服会直接致电您的预留联系电话，收到电话48小时内不上传新的照片，该笔订单自动作废。</h3>
+			</div>
+		</div> 
+	</div>
+<script src="../lib/require.js" data-main="../main"></script>
+
+</body>
+</html>

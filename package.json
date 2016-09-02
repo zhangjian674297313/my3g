@@ -1,0 +1,27 @@
+{
+  "name": "my3G",
+  "version": "1.0.0",
+  "description": "my 3G",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "object",
+    "requirejs",
+    "htmls",
+    "css3",
+    "moblie",
+    "template"
+  ],
+  "author": "Kopjie",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

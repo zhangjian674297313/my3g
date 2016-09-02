@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>我的3G</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<div class="T_container" id='tab'>
+		<div class="T_header">
+			<span class="right-arrow T_back"></span><h4 id="h4">我的3G</h4>
+		</div>
+		<div class="T_main">
+			<h3>账户余额:152.00元</h3>
+			<ul class='T_nav'>
+				<li><a href="#/one"  class="active">用量查询</a></li>
+				<li><a href="#/two">话费充值</a></li>
+				<li><a href="#/three">当月话费</a></li>
+				<li><a href="#/four">个人中心</a></li>
+			</ul>	
+			<section ng-controller="ctrl" class="T_content">
+			  <div ng-view class="view1"></div> 
+			</section>
+		</div>
+	</div>		
+	<script src="../lib/angular.min.js"></script>
+	<script src="../lib/angular-route.min.js"></script> 
+	<script src="../lib/jquery.js"></script>
+	<script src="../js/js.js"></script>
+
+	<!-- <script src="../lib/require.js" data-main="../main"></script> --> 
+</body>
+</html>
